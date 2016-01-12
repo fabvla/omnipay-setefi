@@ -50,7 +50,10 @@ class Request extends AbstractRequest
                 ->setPostField('responseToMerchantUrl', $this->getParameter('returnUrl'))
                 ->setPostField('recoveryUrl', $this->getParameter('cancelUrl'))
                 ->setPostField('merchantOrderId', $this->getParameter('transactionId'))
-                ->setPostField('description', $this->getParameter('description'));
+                ->setPostField('description', $this->getParameter('description'))
+                ->setPostField('cardHolderName', $this->getParameter('cardHolderName'))
+                ->setPostField('cardHolderEmail', $this->getParameter('cardHolderEmail'))
+                ->setPostField('customField', $this->getParameter('customField'));
             $tokenResponse = $tokenRequest->send();
 
             $xml = simplexml_load_string($tokenResponse->getBody()->__toString());

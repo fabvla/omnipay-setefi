@@ -33,7 +33,10 @@ class Gateway extends AbstractGateway
             'returnUrl'             => 'http://www.merchant.it/notify',
             'cancelUrl'             => null,
             'transactionId'         => 'TRCK0001',
-            'description'           => 'Description'
+            'description'           => 'Description',
+        	'cardHolderName'		=> null,
+        	'cardHolderEmail'		=> null,
+        	'customField'			=> null
         );
     }
 

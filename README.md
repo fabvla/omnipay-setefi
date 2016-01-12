@@ -43,7 +43,10 @@ repository.
             'cancelUrl'             => 'http://www.merchant.it/error',
             'transactionId'         => 'TRCK0001',
             'description'           => 'Description'
-            'language'              => \SimoTod\OmnipaySetefi\Gateway::LANG_ITA
+            'language'              => \SimoTod\OmnipaySetefi\Gateway::LANG_ITA,
+    		'cardHolderName' 		=> 'Tom Smith',
+    		'cardHolderEmail'  		=> 'tom.smith@test.com',
+        	'customField' 			=> 'Custom Field'
  		)
 	);
 
